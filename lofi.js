@@ -5,7 +5,7 @@ var button = document.getElementById("button_1");
 button.addEventListener("click", function(){
   if(mymusic.paused){
     mymusic.play();
-    mymusic.volume=.5;
+    mymusic.volume=.4;
     button.className = "fa-solid fa-pause fa-beat";
   } else {
     mymusic.pause();
