@@ -1,5 +1,5 @@
 const mymusic = new Audio();
-mymusic.src = "./music/1.mp3";
+mymusic.src = "https://rohandas28.github.io/lofi-player/music/1.mp3";
 
 var button = document.getElementById("button_1");
 button.addEventListener("click", function(){
