@@ -95,7 +95,7 @@ i {
   .slidecontainer {
     position: relative;
     transform: rotateZ(90deg);
-    top: -7em;
+    top: -5em;
     right: -5em;
     margin: 4px;
   }

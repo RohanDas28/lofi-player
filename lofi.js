@@ -1,8 +1,10 @@
 const mymusic = new Audio();
-mymusic.src = "https://rohandas28.github.io/lofi-player/music/1.mp3";
+let random = Math.floor(Math.random() * 10)
+mymusic.src = `https://rohandas28.github.io/lofi-player/music/${random}.mp3`;
+// mymusic.src = `/music/${random}.mp3`; // For local system
+
 
 var button = document.getElementById("button_1");
-
 const rangechange = (val) =>{
   var k = val/10
   mymusic.volume = k 
@@ -27,14 +29,4 @@ setInterval(() =>{
 
         });
 
-},10000
-)
-
-// let sliderValue = document.getElementById("myRange");
-
-// sliderValue.oninput = function() {
-//   let k =("0." + (sliderValue.value%10))
-//   k  =parseInt(k)
-//   console.log(k)
-//   console.log("0." + sliderValue.value%10)
-// }
+},10000)
