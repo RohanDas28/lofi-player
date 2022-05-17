@@ -93,10 +93,6 @@ i {
 
 @media (max-width:430px) {
   .slidecontainer {
-    position: relative;
-    transform: rotateZ(90deg);
-    top: -5em;
-    right: -5em;
-    margin: 4px;
+    display: none;
   }
 }
