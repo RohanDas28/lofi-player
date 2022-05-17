@@ -1,54 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-html, body{
-    height: 100%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap');
 
-::-webkit-scrollbar{
-    display: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html,
+body {
+  overflow: hidden;
+  max-height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+}
 
-.bg{
-    background: url("https://rohandas28.github.io/lofi-player/bg.gif");
-    background-size: cover;
-    background-repeat:no-repeat ;
-    background-position: center;
-    height: 100vh;
+::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 17px;
+  background: #cacfca;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 3px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  padding: 2px 2px;
+  position: absolute;
+  right: 0px;
+  top: 85px;
+  transform: rotateZ(270deg);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background: black;
+  cursor: pointer;
 }
 
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0 auto;
-    
-    
+.bg {
+  background: url("https://rohandas28.github.io/lofi-player/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-.child{
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.child {
   width: 50px;
   height: 50px;
 }
-.quote{
-    padding: 14px;
-    margin: 15px 15px ;
-    background-color: rgba(255, 255, 255, 0.786); 
-    box-shadow: 0 0 20px black;
-    border-radius: 8px;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    font-family: 'Poppins', sans-serif;
+
+.quote {
+  padding: 14px;
+  margin: 15px 15px;
+  background-color: rgba(255, 255, 255, 0.842);
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  text-shadow: none;
+  user-select: all;
+  font-size: 1.5em;
 }
-i{
-    font-size: 35px;
-    color: white;
-    text-shadow: 0 0 20px black;
+
+i {
+  font-size: 35px;
+  color: white;
+  text-shadow: 0 0 20px black;
+}
+
+@media (max-width:430px) {
+  .slidecontainer {
+    position: relative;
+    transform: rotateZ(90deg);
+    top: -7em;
+    right: -5em;
+    margin: 4px;
+  }
 }
