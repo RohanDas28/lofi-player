@@ -1,5 +1,5 @@
 const mymusic = new Audio();
-let random = Math.floor(Math.random() * 10)
+let random = Math.floor(Math.random() * 11)
 mymusic.src = `https://rohandas28.github.io/lofi-player/music/${random}.mp3`;
 // mymusic.src = `/music/${random}.mp3`; // For local system
 
